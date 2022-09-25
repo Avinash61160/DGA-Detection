@@ -10,9 +10,9 @@ import pandas as pd
 
 app = Flask(__name__)
 
-cat_model = joblib.load("catboost.joblib")
+# cat_model = joblib.load("catboost.joblib")
 
-scale = joblib.load("sc.joblib")
+# scale = joblib.load("sc.joblib")
 
 
 
@@ -23,10 +23,10 @@ def home():
     return render_template('home.html')
 
 
-@app.route('/predict',methods=['POST'])
+@app.route('/predict_api',methods=['POST'])
 
 
-def predict():
+def predict_api():
 
     data=request.json['data']
     print(data)
@@ -41,9 +41,9 @@ def predict():
 
     return jsonify(output[0])
 
-@app.route('/pred',methods=['POST'])
+@app.route('/predict',methods=['POST'])
 
-def pred():
+def predict():
     data=[float(x) for x in request.form.values()]
     final_input = sc.transform(np.array(data).reshape(1,-1))
     print(final_input)
