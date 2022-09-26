@@ -9,11 +9,7 @@ import pandas as pd
 
 app = Flask(__name__)
 
-db = SQLAlchemy(app)
-# cat_model = joblib.load("catboost.joblib")
-
-# scale = joblib.load("sc.joblib")
-
+cat_model = joblib.load("catboost.joblib")
 
 
 @app.route('/')
