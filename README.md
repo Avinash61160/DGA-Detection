@@ -11,4 +11,4 @@ Create a new environment
 ---
 python3 -m venv path-Nmae_of_Env
 ---
-install requirement.txt 
+install requirements.txt 
