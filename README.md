@@ -1,5 +1,7 @@
 # DGA-Detection
 
+## You can visit our site at - https://dgadetection.herokuapp.com/ 
+
 ## Required softwares and tools
 
 1.[Github Account](https://github.com)
