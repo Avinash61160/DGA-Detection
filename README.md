@@ -8,6 +8,7 @@
 2.[VS code IDE](https:/code.visualstudio.com/)
 3.[Heroku Account](https://heroku.com)
 4.[GitCLI](https://git-scm.com/book/en/v2/Getting-Started-The-Command-Line)
+5.[Docker](https://www.docker.com/)
 
 Create a new environment 
 ---
